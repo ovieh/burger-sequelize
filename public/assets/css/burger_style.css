@@ -1,0 +1,18 @@
+body, html {
+    background-image: url("../img/seamless-fast-food-pattern-1330.png");
+
+}
+
+img {
+    max-height: 300px;
+}
+
+.title {
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
+#header {
+    margin-bottom: 1.5em;
+}

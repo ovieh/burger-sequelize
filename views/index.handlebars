@@ -1,0 +1,71 @@
+<div class="container" id="header">
+  <section class="hero is-danger">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1">
+          <!-- <img src="assets/img/burger.gif" alt="" class="card-img-top"> -->
+          Devour-a-Burger
+        </h1>
+        <h2 class="subtitle">
+          A Burger Logger
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+
+  <div class="tile is-ancestor">
+    <div class="tile is-6 is-parent">
+      <div class="tile is-child box">
+        <p class="title">Devour a Burger!</p>
+
+        <ul>
+          {{#each burgers}} {{#unless devoured}}
+          <li>
+            {{id}}. {{burger_name}}
+            <button class="change-devour button is-danger" data-id="{{id}}" data-newdevour="{{devoured}}">
+              Devour!!
+            </button>
+          </li>
+          {{/unless}} {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child box">
+        <p class="title">Devoured Burgers!</p>
+        <div class="menu">
+          <ul>
+            {{#each burgers}} {{#if devoured}}
+            <li>
+              {{id}}. {{burger_name}}
+            </li>
+            {{/if}} {{/each}}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-12 is-parent">
+      <div class="tile is-child box">
+        <p class="title">Add a Burger</p>
+        <form class="create-form">
+
+          <div class="field">
+            <label class="label" for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="name" class="input" required>
+          </div>
+
+          <button class="button is-danger" type="submit ">Add Burger</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
