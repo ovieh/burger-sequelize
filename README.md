@@ -3,9 +3,9 @@
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 TODO: Put more badges here.
 
-> Devour-a-Burger is a Full stack Node app using MySQL, Express, and Handlebars.
+> Devour-a-Burger is a Full stack Node app using MySQL, Sequelize, Express, and Handlebars.
 
-This app demonstrates the use of Node.js, Express.js, MySQL and Handlebars in creating a CRUD application. Devour-a-Burger lets users create burgers and log when they are devoured. When a user creates a burger the burger's name is stored in a database. The name of the burger is displayed using a call to the database along with an option to devour the burgers. Devoured burgers are displayed to the user.
+This app demonstrates the use of Node.js, Express.js, MySQL, Sequelize, and Handlebars in creating a CRUD application. Devour-a-Burger lets users create burgers and log when they are devoured. When a user creates a burger the burger's name is stored in a database. The name of the burger is displayed using a call to the database along with an option to devour the burgers. Devoured burgers are displayed to the user.
 
 ## Table of Contents
 
